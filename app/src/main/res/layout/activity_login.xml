@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+                name="view"
+                type="com.example.inseptiontest.ui.login.LoginContract.View" />
+        <variable
+                name="data"
+                type="com.example.inseptiontest.ui.login.LoginModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_login"
+            tools:context=".ui.login.LoginActivity">
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_line_horizontal_45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.45" />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_line_horizontal_56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.56" />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_line_horizontal_68"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.68" />
+        <!--android:text="N000054949"-->
+        <EditText
+                android:id="@+id/edit_account"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:hint="@string/login_account_hint"
+                android:textColorHint="@color/colorWhite"
+                android:text="@={data.account}"
+                android:gravity="center"
+                app:layout_constraintWidth_percent="0.9"
+                app:layout_constraintHeight_percent="0.08"
+                android:background="@drawable/bg_login_account"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/guide_line_horizontal_45" />
+        <!--android:text="1203-Z"-->
+        <EditText
+                android:id="@+id/edit_password"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:hint="@string/login_password_hint"
+                android:inputType="textPassword"
+                android:text="@={data.password}"
+                android:textColorHint="@color/colorWhite"
+                android:gravity="center"
+                android:background="@drawable/bg_login_password"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.9"
+                app:layout_constraintHeight_percent="0.08"
+                app:layout_constraintTop_toBottomOf="@id/guide_line_horizontal_56" />
+
+        <Button
+                android:onClick="@{()->view.onLoginClick()}"
+                android:id="@+id/btn_login"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/bg_login_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/guide_line_horizontal_68"
+                app:layout_constraintVertical_bias="0.525"
+                app:layout_constraintWidth_percent="0.3" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

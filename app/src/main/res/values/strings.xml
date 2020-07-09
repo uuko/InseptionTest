@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">InseptionTest</string>
+
+    <!--   base    -->
+    <string name="add_device_error">查詢資料失敗，請重試或檢查網路狀態。</string>
+    <string name="waiting_loading">讀取中</string>
+    <string name="no_device">無設備</string>
+    <string name="auto_loading">自動登入中</string>
+    <string name="login_loading">登入中</string>
+    <string name="get_inspection_data_error_message">無法取得巡檢資料</string>
+    <!--    api     -->
+    <string name="api_on_SearchEQNO">SearchEQNO</string>
+    <string name="api_on_SearchEQKD">SearchEQKD</string>
+    <string name="api_on_SearchPMFCT">SearchPMFCT</string>
+    <string name="api_on_SearchCO">SearchCO</string>
+    <string name="api_on_SearchMNTFCT">SearchMNTFCT </string>
+    <string name="api_on_DisposableToken">DisposableToken</string>
+    <string name="api_on_AddChkInfo">AddChkInfo</string>
+    <string name="api_base_url">https://cloud.fpcetg.com.tw/FPC/API/MTN/API_MTN/MTN/</string>
+    <string name="api_accesstoken">AccessToken</string>
+    <!--  login   -->
+    <string name="login_account_hint">請輸入帳號</string>
+    <string name="login_password_hint">請輸入密碼</string>
+
+    <!--    main -->
+    <string name="upload">OK</string>
+    <string name="device_company">公 &#160;&#160;&#160;&#160;&#160;&#160;&#160;司:&#160;</string>
+    <string name="job_site">作業廠處:&#160;</string>
+    <string name="production_plant">生 &#160;產 &#160;廠:&#160;</string>
+    <string name="route_code">路線代號:&#160;</string>
+    <string name="route_name">路線名稱:&#160;</string>
+    <string name="device_category">設備類別:&#160;</string>
+    <string name="device_number">設備:&#160;</string>
+    <string name="device_name">設備名稱:&#160;</string>
+    <string name="create">建立</string>
+    <string name="live_data">現場資料</string>
+    <string name="data_upload">資料上傳</string>
+    <string name="record_date">紀錄日期:&#160;</string>
+    <string name="maintenance_plant">保 &#160;養 &#160;廠:&#160;</string>
+    <string name="file">檔 &#160;&#160;&#160;&#160;&#160;&#160;&#160;案:&#160;</string>
+    <string name="auto_login_error_message">巡檢取得不到資料，無法自動登入</string>
+</resources>
